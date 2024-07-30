@@ -1,0 +1,26 @@
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+.images img{
+    height: 220px;
+    width: 90%;
+    margin-top: 10px;
+}
+.gallery-div h1{
+    margin-top: 150px;
+    font-size: 50px;
+}
+@media (max-width: 1000px){
+    .images-container{
+        display: grid;
+        grid-template-columns: repeat(3, 35%);
+    }
+}
+@media (max-width: 600px){
+    .images-container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin-left: 10px;
+    }
+}

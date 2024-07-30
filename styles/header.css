@@ -1,0 +1,555 @@
+/*back to top*/
+.my_bttn{
+	height: 35px;
+	width: 35px;
+	background-color: #67a8df;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+    display: none;
+	outline: none;
+	z-index: 1000;
+    border-radius: 50%;
+    
+    transition: 0.25s;
+}
+.my_bttn:hover{
+	transform: scale(1.05) translateY(-5px);
+}
+.my_down_bttn{
+	height: 45px;
+	width: 45px;
+	background-color: #fc6b13;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	z-index: 1000;
+    border-radius: 50%;
+
+    transition: 0.25s;
+
+}
+.my_down_bttn a{
+    text-decoration: none;
+    color: white;
+}
+.my_down_bttn:hover{
+	transform: scale(1.05) translateY(-5px);
+}
+.my_down_bttn_hover-tiktok{
+    height: 55px;
+	width: 55px;
+	background-color: #67a8df;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	left: 100px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	z-index: 1000;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+.my_down_bttn_hover-room{
+    height: 55px;
+	width: 55px;
+	background-color: #67a8df;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	left: 170px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	z-index: 1000;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+.my_down_bttn_hover-map{
+    height: 55px;
+	width: 55px;
+	background-color: #67a8df;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	left: 240px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	z-index: 1000;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+.my_down_bttn_hover-contact_us{
+    height: 55px;
+	width: 55px;
+	background-color: #67a8df;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	left: 310px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	z-index: 1000;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+.my_down_bttn_hover-tiktok:hover, .my_down_bttn_hover-map:hover,
+.my_down_bttn_hover-contact_us:hover, .my_down_bttn_hover-room:hover{
+	transform: scale(1.05) translateY(-5px);
+}
+/*back to top end*/
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", poppin;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    z-index: 20;
+
+
+    animation: header linear forwards;
+    animation-timeline: view();
+    animation-range-start: 100vh;
+    animation-range-end: 180vh;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.links-container a{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    color: #000000;
+    fill: #000000;
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+
+    font-family: "Poppins", poppin;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+header a:hover{
+    color: #fc6b13;
+    height: 80%;  
+    border-bottom-color: #fc6b13;
+    border-bottom-width: 2px;
+    border-bottom-style: solid; 
+
+}
+header .overview-lnk{
+    margin-left: 5%;
+}
+.contact-link{
+    margin-right: 8%;
+}
+header i{
+    font-size: 32px;
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-btton, .close-sidebar-button{
+    display: none;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+}
+.contact-header{
+    color: #fc6b13;
+    margin-right: 7px;
+    margin-left: 20px;
+}
+ .fa-user:hover, .hotel-header-detail h3:hover{
+    color: #fc6b13;
+}
+.book-header:hover{
+    background-color: #ffffff; 
+    color: #fc6b13;
+    border-color: #fc6b13;
+    border-style: solid;
+    border-width: 1px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.header-right-section{
+    display: flex;
+    flex-direction: row;
+}
+.fa-user{
+    color: #67a8df;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    margin-right: 10px;
+    display: var(--logoDisplay, block);
+}
+.book-header{
+    height: 30px;
+    background-color: #67a8df;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 0px 10px ;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    display: var(--logoDisplay, block);
+}
+.logo{
+    width: 65px;
+    display: var(--logoDisplay, block);
+    
+}
+.hotel-header-detail{
+    display: flex;
+    flex-direction: row;
+    display: var(--logoDisplay, flex);
+}
+.hotel-header-detail h3{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #67a8df;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+    top: 60px;
+    z-index: 18;
+    margin-bottom: -5px;
+
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+nav h1{
+    font-size: 20px;
+    margin-left: 5%;
+}
+nav a{
+    margin-left: 1%;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #ce5b13; 
+}
+.fa-location-dot{
+    margin-left: 50px;
+}
+nav .stars{
+    margin-left: 80px;
+    height: 20px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+}
+nav .stars h2{
+    margin-top: -10px;
+}
+
+.question div .Question-text-header{
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #67a8df;
+
+}
+.question div .header-phone-number{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #67a8df;
+    cursor: pointer;
+}
+.outer-big-pic-container{
+    border-image-source: linear-gradient(90deg, rgba(103, 168, 223, 0.2), rgba(206, 91, 19,0.2));
+    border-image-slice: fill 1;
+}
+
+@keyframes header{
+    100%{
+        --logoDisplay: none;
+        top: 2%;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: fit-content;
+        left: 25%;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        border: 2px #67a8df solid;
+    }}
+
+
+
+
+@media(max-width: 1332px){
+    header .overview-lnk{
+        margin-left: 4%;
+    }
+    .contact-link{
+        margin-right: 3%;
+    }
+}
+@media(max-width: 1244px){
+    .book-header{
+        top: 20%;
+        right: 1%;
+    }
+    .fa-user{
+        right: 12%;
+    }
+}
+@media(max-width: 1160px){
+   nav h1{
+    font-size: 23px;
+   } 
+}
+@media(max-width: 1096px){
+    .fa-user{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .book-header{
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav h1{
+        font-size: 21px;
+    }}
+@media(max-width: 964px){
+    .stars i{
+        margin-left: 5px;
+    }
+    nav .stars{
+        margin-left: 10px;
+        width: 300px;
+    }
+    .view-map-p{
+        font-size: 13px;
+        margin-right: 15%;
+    }
+    .header-phone-number{
+        display: none;
+    }
+    .fa-phone{
+        display: none;
+    }
+    .book-header{
+        font-weight: 600;
+    }
+
+}
+@media(max-width: 925px){
+    
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        background-color: white;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25) ;
+    }
+
+    .links-container a{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        font-size: 40px;
+        font-weight: bold;
+    }
+     
+    .links-container a:hover{
+        background-color: white;
+        color: black;
+        height: 20%;    
+        font-weight: bold;
+    }
+    .open-sidebar-btton, .close-sidebar-button{
+        display: block;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .close-sidebar-button{
+        padding-top: 5px;
+    }
+    #sidebar-active:checked ~ .links-container{
+        display: flex;
+    }
+    .hotel-header-detail{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .hotel-header-detail h3{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #67a8df;
+    }
+    .logo{
+        margin-left: 0%;
+    }
+    header .hotel-header-detail .home{
+        margin-left: -100%;
+        border: none;
+    }
+    .links-container .header-right-section{
+        display: block;
+        
+    }
+    .contact-header{
+        display: none;
+    }
+
+    @keyframes header{
+    100%{
+        --logoDisplay: block;
+        top: 0%;
+        background-color: rgba(255, 255, 255, 1);
+        width: 100%;
+        left: 0%;
+        border-radius: 0px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        border: none;
+    }
+}
+
+}
+@media(max-width: 840px){
+    nav h1{
+        margin-left: 10px;
+    }
+    .stars i{
+        margin-left: 5px;
+    }
+    nav .stars{
+        margin-left: px;
+        width: 300px;
+    }
+    .fa-user{
+       right: 17%;
+    }
+    .book-header{
+        top: 120%;
+    }
+}
+@media(max-width: 812px){
+    nav h1{
+        font-size: 17px;
+    }
+}
+@media(max-width: 764px){
+}
+@media(max-width: 580px){
+    nav h1{
+        font-size: 15px;
+    }
+    .stars{
+        font-size: 13px;
+        margin-left: 100%;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 560px){
+    .view-map-p{
+        margin-right: 0px;
+    }
+    .stars i{
+        margin-left: 5px;
+    }
+    nav .stars{
+        margin-right: -20px;
+        width: 200px;
+    }
+}
+@media(max-width: 480px){
+    nav h1{
+        display: none;
+    }
+}
+@media(max-width: 404px){
+    header .hotel-header-detail .home{
+        margin-left: -90%;
+    }
+}
+@media(max-width: 387px){
+    header .hotel-header-detail .home{
+        margin-left: -70%;
+    }
+}
+@media(max-width: 350px){
+    header .hotel-header-detail .home{
+        margin-left: -50%;
+    }
+}
+@media(max-width: 302px){
+    header .hotel-header-detail .home{
+        margin-left: -40%;
+    }
+}

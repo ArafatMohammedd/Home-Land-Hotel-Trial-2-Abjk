@@ -1,0 +1,890 @@
+
+a{
+    text-decoration: none;
+}
+.gallery{
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery .types-room{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div span img{
+    width: auto;
+    transition: transform 0.5s;
+    height: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); 
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*how far the gallery is from the top*/
+    margin: 9% auto;
+}
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+.gallery div span{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+
+
+.outer-big-pic-container{
+    background-color: #333;
+    height: 500px;
+    z-index: 19;
+    margin-top: 5%;
+}
+.big-pic-container{
+    min-width: 100%;
+    max-height: 500px;
+    opacity: 0.6;
+}
+
+.outer-big-pic-container .big-pic-hotel-name{
+    font-size: 70px;
+    font-weight: 700;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    color: #ffffff;
+}
+
+.outer-big-pic-container .big-pic-experiance-p{
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    left: 10%;
+    top: 29%;
+    color: #ffffff;
+}
+.outer-big-pic-container .luxury-p{
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    color: #ffffff;
+}
+.input-big-pic-container{
+    height: 150px;
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    border-radius: 10px;
+
+}
+.input-big-pic-container .check-in, .check-out{
+    margin-top: 70px;
+    margin-left: 70px;
+    width: 150px;
+    height: 30px;
+    border-color: #67a8df;
+    border-width: 1px;
+    border-style: solid;
+}
+.input-big-pic-container .check{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    margin-left: 70px;
+    font-size: 20px
+}
+.quantity-selector{
+    margin-left: 500px;
+    position: absolute;
+    top: 47%;
+    width: 70px;
+    height: 30px;
+    border-color: #67a8df;
+    border-width: 1px;
+    border-style: solid;
+}
+.input-big-pic-container button{
+    margin-left: 650px;
+    position: absolute;
+    top: 38%;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #67a8df;
+    color: white;
+}
+a{
+    color: inherit;
+}
+.input-big-pic-container button:hover{
+    background-color: white;
+    color: #67a8df;
+    border-color: #67a8df;
+    border-style: solid;
+    border-width: 2px;
+}
+.input-big-pic-container button:active{
+    background-color: white;
+    color: #fc6b13;
+    border-color: #fc6b13;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.quantity-selector::placeholder{
+    font-size: 500px;
+}
+.room-detail h2{
+    padding: 10px;
+    font-size: 30px;
+}
+.statics{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.grid-statics{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.grid-statics li{
+    height: 100px;
+}
+
+.grid-statics-secound-line{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+.fa-circle-check{
+    color: green;
+    font-size: 20px;
+}
+.room-detail h2, .call span{
+    color: #67a8df;
+    
+}
+.statics h3{
+    margin-top: 10px;
+}
+.call{
+    font-size: 20px;
+}
+.call .phone{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+
+    
+}
+.contact-detail{
+    color: #fc6b13;
+    margin-right: 7px;
+    margin-left: 180px;
+    margin-top: 25px;
+}
+.statics button{
+    padding: 15px 20px;
+    background-color: #fc6b13;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 80px;
+    border-radius: 10px;
+
+}
+.statics button:hover{
+    background-color: #fc6b13;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.map-container{
+    margin-bottom: 100px;
+    height: 500px;
+    width: 100%;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 35% 65%; 
+}
+.map-container .map iframe{
+    margin-top: 25px;
+    border-radius: 25px;
+}
+.location-dot{
+    color: #67a8df;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: -10%;
+}
+.our-location-div{
+    position: relative;
+}
+.our-location-div h4{
+    color: rgb(199, 199, 199);
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+    top: 65%;
+    position: absolute;
+}
+.our-location-div h2{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 1000;
+    margin-left: -50px;
+    top: 125%;
+    position: absolute;
+}
+.detail-location .map-hotel-name{
+    margin-top: 100px;
+}
+.detail-location p{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.detail-location p a:hover{
+    text-decoration: underline;
+}
+.services-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,  25%);
+}
+.services{
+    margin-top: 0px;
+    margin-left: 20px;
+    height: 350px;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.services i{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 90px;
+    color: #fc6b13;
+}
+.services:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.services-name-div{
+    width: 100%;
+}
+.services-name-div .services-p{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.services p{
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: start;
+}
+.services h3{
+    color: #fc6b13;
+    margin-top: 10px;
+    margin-left: 30%;
+    font-size: 15px;
+}
+.services-name-div button{
+    background-color: #fc6b13;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    height: 40px;
+    width: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+.services-name-div button:hover{
+    color: #fc6b13;
+    border-color: #fc6b13;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+.services-name-div button:active{
+    color: #67a8df;
+    border-color: #67a8df;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+.welcome{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 96%;
+    height: 500px;
+    margin: 50px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-welcome{
+    margin-left: 30px;
+    height: 500px;
+}
+.img-welcome-img{
+    border-radius: 20px;
+    width: 85%;
+}
+.fa-arrow-up-wide-short{
+    font-size: 75px;
+    margin-left: 15px;
+    color: #67a8df;
+}
+.welcome-p{
+    font-size: 35px;
+    color: #67a8df;
+    margin-left: -10px;
+}
+.welcome-sub-title{
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Poppins', poppin;
+    color: #67a8df;
+}
+.welcome-statement{
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: justify;
+}
+.rooms-p{
+    font-size: 30px;
+    margin-bottom: -100px;
+    margin-left: 10%;
+}
+
+  /*Partner*/
+  .partner-h1{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .partner-h1 h1{
+    font-size: 45px;
+    text-align: center;
+  }
+  
+
+  .bottom-line-span{
+    height: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #fc6b13;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: bottomScrollWatcher linear;
+    animation-timeline: scroll();
+}
+
+.tiktok{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    margin-left: 20%;
+}
+blockquote{
+    border-radius: 40px;
+}
+.tiktok .tiktok-detail h1{
+    margin-top: 70%;
+    font-size: 40px;
+}
+.tiktok .tiktok-detail h1 i{
+    font-size: 40px;
+    margin-left: 30px;
+}
+.tiktok .tiktok-detail h1 i:hover{
+    color: #fc6b13;
+    cursor: pointer;
+}
+.avbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+}
+
+.info-item {
+    text-align: center;
+    flex: 1;
+    margin: 10px; /* Adjust margin to give spacing */
+    min-width: 250px; /* Ensures items don’t get too small */
+}
+
+.info-item h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #666;
+    text-align: justify;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .info-item {
+        flex: 1 1 100%; /* Stack items vertically on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-value {
+        font-size: 2em; /* Smaller font size on very small screens */
+    }
+
+    .info-item h2 {
+        font-size: 1em; /* Adjust header font size */
+    }
+
+    .info-item p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+}
+
+@keyframes bottomScrollWatcher {
+    to{
+        scale: 1 1;
+    }
+}
+
+
+  /* == responsive == */
+@media(max-width: 1954px){
+    .big-pic-experiance-p{
+        top: 170%;
+    }
+    .big-pic-hotel-name{
+        top: 35%;
+    }
+    .luxury-p{
+        top: 50%;
+    }
+}
+@media(max-width: 1360px){
+    .big-pic-experiance-p{
+        margin-top: -3%;
+    }
+    .big-pic-hotel-name{
+        margin-top: -3%;
+    }
+    .luxury-p{
+        margin-top: -8%;
+    }
+    .input-big-pic-container{
+        margin-top: 3%;
+        width: 800px;
+    }
+    .services{
+        margin-top: 20px;
+    }}
+@media (max-width: 1269px){
+    .gallery-wrap{
+        margin: 13% auto;
+    }
+
+}
+@media(max-width: 1121px){
+    .input-big-pic-container{
+        display: none;
+    }
+    .welcome-p{
+        font-size: 25px;
+        color: #67a8df;
+        margin-left: -50px;
+    }
+    .welcome-sub-title{
+        font-size: 23px;
+        margin-left: -20px;
+        font-family: 'Poppins', poppin;
+        color: #67a8df;
+    }
+    .welcome-statement{
+        margin-top: 50px;
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+@media(max-width: 987px){
+    .services-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,  33%);
+    }
+    .img-welcome-img{
+        border-radius: 20px;
+        width: 90%;
+        height: 120%;
+    }
+}
+
+@media(max-width: 977px){
+    .our-location-div h2{
+        font-size: 30px;
+    }    
+    .big-pic-experiance-p{
+        margin-top: -3%;
+    }
+    .big-pic-hotel-name{
+        margin-top: -4%;
+    }
+    .luxury-p{
+        margin-top: -6%;
+    }
+    .input-big-pic-container{
+        margin-top: 7%;
+        width: 800px;
+        left: 1%;
+    }
+}@media(max-width: 900px){
+    .input-big-pic-container{
+        display: none;
+    }
+}
+@media(max-width: 861px){
+    .welcome{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        height: 1300px;
+        margin: 50px 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .fa-arrow-up-wide-short{
+        font-size: 75px;
+        margin-left: 15px;
+        margin-top: 10px;
+        color: #67a8df;
+        }
+    .welcome-p{
+        font-size: 35px;
+        color: #67a8df;
+        margin-left: 10px;
+        }
+    .welcome-sub-title{
+        font-size: 25px;
+        margin-left: 15px;
+        font-family: 'Poppins', poppin;
+        color: #67a8df;
+        }
+    .welcome-statement{
+        margin-top: 50px;
+        font-size: 18px;
+        text-align: justify;
+        width: 90%;
+        }
+}
+@media (max-width: 846px){
+    .gallery-wrap{
+        margin: 18% auto;
+    }
+}
+@media(max-width: 782px){
+    .map-container{
+        height: 1000px;
+        grid-template-columns: 100%; 
+        grid-template-rows: 35% 65%;
+    }
+    .map-container .map iframe{
+        border-radius: 25px;
+        margin-left: 0px;
+        margin-top: 0;
+        width: 100%;
+        height: 650px;
+    }
+}
+@media(max-width: 754px){
+.big-pic-container{
+    height: 500px;
+    width: 100%;
+}
+}
+@media (max-width: 7040px){
+    .outer-big-pic-container .big-pic-experiance-p
+    {
+        font-size: 30px;
+    }
+    .outer-big-pic-container .big-pic-hotel-name
+    {
+        font-size: 50px;
+    }
+    
+
+}
+@media(max-width: 686px){
+    .services-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+    }
+    .services{
+        width: 100%;
+        height: 250px;
+    }
+    .services i{
+        margin-left: 30%;
+    }
+}
+@media(max-width: 670px){
+    #backBtn, #nextBtn{
+        margin: 30px;
+    }
+    .statics button{
+        padding: 15px 20px;
+        background-color: #fc6b13;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .contact-detail{
+        margin-left: 82px;
+    }
+    .gallery-wrap{
+        margin: 24% auto;
+    }
+    .img-welcome-img{
+        border-radius: 20px;
+        height: auto;
+    }
+    .welcome{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        height: 1000px;
+        margin: 50px 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+@media(max-width: 630px){
+    .outer-big-pic-container .big-pic-hotel-name
+    {
+        font-size: 50px;
+    }
+}
+@media(max-width: 618px){
+    .tiktok .tiktok-detail h1{
+        margin-top: 70%;
+        font-size: 30px;
+    }
+    .tiktok .tiktok-detail h1 i{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .tiktok{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10%;
+        margin-left: 3%;
+    }
+}
+@media (max-width: 552px){
+    .outer-big-pic-container .big-pic-hotel-name
+    {
+        font-size: 50px;
+        margin-top: -5%;
+    }
+    .outer-big-pic-container .luxury-p
+    {
+        font-size: 25px;
+        margin-top: -7%;
+    }
+    .big-pic-experiance-p{
+        margin-top: -5%;
+        margin-left: -7%;
+    }
+    .services i{
+        font-size: 50px;
+        margin-top: 50px;
+        color: #fc6b13;
+    }
+    .services{
+        height: 280px;
+    }
+    .welcome{
+        height: 1100px;
+    }
+}
+@media(max-width: 520px){
+    #backBtn, #nextBtn{
+        margin: 5px;
+        width: 40px;
+    }
+    .gallery div span img{
+        height: 250px;
+    }   
+    .outer-big-pic-container .big-pic-hotel-name{
+        font-size: 43px;
+    }
+    .outer-big-pic-container .luxury-p{
+        margin-top: -10%;
+    }
+    .map-container{
+        height: 1000px;
+        grid-template-columns: 100%; 
+        grid-template-rows: 45% 85%;
+    }
+}
+@media (max-width: 470px){
+    .tiktok{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .tiktok .tiktok-detail h1{
+        margin-top: 5%;
+        margin-bottom: 50%;
+    }
+    blockquote{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 447px){
+    .gallery-wrap{
+        margin: 27% auto;
+    }
+    .gallery div span img{
+        height: 200px;
+    }
+}
+@media(max-width: 437px){
+    .outer-big-pic-container .big-pic-hotel-name{
+        font-size: 40px;
+        margin-left: -8%;
+    }
+    .outer-big-pic-container .luxury-p{
+        margin-top: -13%;
+        margin-left: -5%;
+    }
+    nav h1{
+        display: none;
+    }
+}
+@media (max-width: 404px){
+    .gallery-wrap{
+        margin: 33% auto;
+    }
+}
+@media (max-width: 385px){
+    nav h1{
+        font-size: 1px;
+    }
+}
+@media(max-width: 380px){
+    .contact-detail{
+        margin-left: 45px;
+    }
+    .statics button{
+        padding: 15px 20px;
+        background-color: #fc6b13;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 379px){
+    .outer-big-pic-container .big-pic-hotel-name
+    {
+        font-size: 35px;
+    }
+    .outer-big-pic-container .luxury-p
+    {
+        font-size: 25px;
+    }
+}
+@media(max-width: 343px){
+    nav h1{
+        display: none;
+    }
+}
+@media(max-width: 325px){
+    .outer-big-pic-container .big-pic-hotel-name
+    {
+        font-size: 30px;
+    }
+    .outer-big-pic-container .luxury-p
+    {
+        font-size: 25px;
+        margin-top: -50%;
+    }
+}
