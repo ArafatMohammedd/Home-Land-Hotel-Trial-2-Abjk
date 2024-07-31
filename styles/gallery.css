@@ -11,10 +11,59 @@
     margin-top: 150px;
     font-size: 50px;
 }
+.fullImage{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 10000;
+    text-align: center;
+}
+.fullImg{
+    height: 90%;
+    width: 70%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.fa-x{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
 @media (max-width: 1000px){
     .images-container{
         display: grid;
         grid-template-columns: repeat(3, 35%);
+    }
+}
+@media(max-width: 721px){
+    .fullImg{
+        height: 70%;
+        width: 70%;
+        margin-top: 15%;
+        cursor: pointer;
+    }
+}
+@media(max-width: 641px){
+    .fullImg{
+        height: 60%;
+        width: 70%;
+        margin-top: 20%;
+        cursor: pointer;
+    }
+}
+@media(max-width: 535px){
+    .fullImg{
+        height: 50%;
+        width: 80%;
+        margin-top: 40%;
+        cursor: pointer;
     }
 }
 @media (max-width: 600px){
