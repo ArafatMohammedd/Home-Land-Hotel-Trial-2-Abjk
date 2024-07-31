@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
 .images-container{
     display: grid;
     grid-template-columns: repeat(5, auto);
