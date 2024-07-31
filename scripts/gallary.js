@@ -40,9 +40,8 @@ let HTML;
 const imagContainer = document.querySelector('.images-container');
 galleryImg.forEach((galleryImg)=>{
     HTML = `<div class="images">
-    <img src="images/${galleryImg.img}" style = "${galleryImg.style}">
+    <img src="images/${galleryImg.img}" style = "${galleryImg.style}"  onclick="fullImg(this.src)">
     </div>`;
-    console.log(`image/${galleryImg.img}`)
     imagContainer.innerHTML += HTML
     
 });
@@ -58,7 +57,17 @@ ScrollReveal().reveal(
     '.images img', 
     { delay: 500 });
 
+function fullImg (imgsSrc) {
+    document.querySelector('.fullImg')
+        .src = imgsSrc;
+    document.querySelector('.fullImage')
+        .style.display = "block";
+}
 
+function closeFullImage () {
+    document.querySelector('.fullImage')
+    .style.display = "none";
+}
 
     $(document).ready(function(){
         $(window).scroll(function(){
