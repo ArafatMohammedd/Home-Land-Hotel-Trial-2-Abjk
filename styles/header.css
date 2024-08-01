@@ -116,14 +116,7 @@
 /*back to top end*/
   
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", poppin;
-}
-body{
-	margin: 0;
-	padding: 0;
 }
 header{
     width: 100%;
