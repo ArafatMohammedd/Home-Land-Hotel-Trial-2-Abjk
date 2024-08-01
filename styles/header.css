@@ -549,7 +549,7 @@ nav .stars h2{
         margin-left: -70%;
     }
 }
-@media(max-width: 350px){
+@media(max-width: 374px){
     header .hotel-header-detail .home{
         margin-left: -50%;
     }
