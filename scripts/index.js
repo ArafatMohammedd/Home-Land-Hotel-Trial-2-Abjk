@@ -61,13 +61,14 @@ let HTML = `<span>
 });
 
 
-const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg']; // Array of image paths
+
+const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','images/room-detail-1.jpg', 'images/room-detail-3.jpg', 'images/Exterior-5.jpg']; // Array of image paths
     let currentIndex = 0;
     const imageElement = document.getElementById('slider-image');
 
     function changeImage() {
         currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
-        imageElement.style.opacity = 0; // Start fading out
+        imageElement.style.opacity = 0.4; // Start fading out
 
         setTimeout(() => {
             imageElement.src = images[currentIndex];
@@ -75,7 +76,8 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg']; 
         }, 1000); // Match this to the duration of your fade-out transition
     }
 
-        setInterval(changeImage, 4200); // Change image every 3 seconds
+        setInterval(changeImage, 3000); // Change image every 2 seconds
+
 
 
     $(document).ready(function(){
