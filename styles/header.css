@@ -114,9 +114,17 @@
 	transform: scale(1.05) translateY(-5px);
 }
 /*back to top end*/
-  
-*{
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: "Poppins", poppin;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 header{
     width: 100%;
