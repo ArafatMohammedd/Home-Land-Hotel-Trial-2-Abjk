@@ -293,6 +293,7 @@ li{
     font-weight: 1000;
     top: 125%;
     position: absolute;
+    margin-left: -3px;
 }
 .detail-location .map-hotel-name{
     margin-top: 100px;
@@ -659,7 +660,7 @@ blockquote{
         margin: 18% auto;
     }
 }
-@media(max-width: 782px){
+@media(max-width: 854px){
     .map-container{
         height: 1000px;
         grid-template-columns: 100%; 
@@ -678,6 +679,23 @@ blockquote{
     height: 500px;
     width: 100%;
 }
+}
+@media (max-width: 730px){
+    .tiktok{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .tiktok .tiktok-detail h1{
+        margin-top: 5%;
+        margin-bottom: 50%;
+    }
+    blockquote{
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 710px){
     .outer-big-pic-container .big-pic-experiance-p
@@ -806,23 +824,6 @@ blockquote{
         height: 1000px;
         grid-template-columns: 100%; 
         grid-template-rows: 45% 85%;
-    }
-}
-@media (max-width: 470px){
-    .tiktok{
-        display: flex;
-        flex-direction: column;
-        column-gap: 10%;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-    .tiktok .tiktok-detail h1{
-        margin-top: 5%;
-        margin-bottom: 50%;
-    }
-    blockquote{
-        margin-bottom: 0;
     }
 }
 @media (max-width: 447px){
