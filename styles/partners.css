@@ -1,3 +1,4 @@
+
 .partner{
     height: 150px;
     border-radius: 50px;
@@ -8,19 +9,17 @@
     margin-left: 0%;
 }
 .partner:hover{
-    scale: 1.3;
+    scale: 1.1;
     z-index: 1000;
 }
 .tooltip{
     margin-top: 50px;
-    background-color: rgb(61, 61, 61);
-    color: white;
     padding: 8px 8px;
-    width: 120%;
-    text-wrap: nowrap;
-    display: none;
-    overflow: visible;
+    width: 80%;
     border-radius: 10px;
+    text-decoration: underline;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
 }
 .partner-div:hover .tooltip{
     display: block;
@@ -30,9 +29,13 @@
 }
 .tooltip-hawi-furniture{
     width: 50%;
+    margin-left: 100px;
+}
+.tooltip-astu{
+    margin-left: 50px;
 }
 .tooltip-cbe{
-    width: 150%;
+    margin-left: 50px;
 }
 @media (max-width: 1350px){
     .partner{
@@ -40,23 +43,12 @@
     }
 
 }
-@media (max-width: 1100px) {
-    .tooltip-cbe{
-        width: 160%;
-    }
-}
 @media (max-width: 1000px){
-    .tooltip{
-        width: 180%;
-    }
     .tooltip-hawi-furniture{
-        width: 80%;
+        margin-left: 70px;
     }
 }
 @media (max-width: 844px){
-    .tooltip-cbe{
-        width: 200%;
-    }
     .tooltip{
         font-size: 13px;
     }
@@ -68,11 +60,14 @@
     }
 }
 @media (max-width: 792px){
-    .tooltip-cbe{
-        width: 280%;
+    .tooltip-hawi-furniture{
+        margin-left: 50px;
     }
-    .partner {
-        height: 70px;
+    .tooltip-bahir-dar{
+        width: 150%;
+    }
+    .tooltip-penta{
+        width: 100%;
     }
 }
 @media (max-width: 608px){
@@ -91,7 +86,19 @@
         height: 100px;
     }
     .partners{
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 40%);
+    }
+    .tooltip{
+        margin-top: 0;
+    }
+    .tooltip-hawi-furniture{
+        margin-left: 60px;
+    }
+    .tooltip-cbe{
+        margin-left: 30px;
+    }
+    .tooltip-astu{
+        margin-left: 0px;
     }
 }
 @media(max-width: 404px){
