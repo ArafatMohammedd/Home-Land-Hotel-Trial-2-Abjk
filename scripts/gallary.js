@@ -31,7 +31,7 @@ const galleryImg = [{
     img: 'gallary7.jpg'
 },{
     img: 'gallary8.jpg'
-},]
+,];
 let HTML;
 const imagContainer = document.querySelector('.images-container');
 galleryImg.forEach((galleryImg)=>{
