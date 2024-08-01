@@ -559,23 +559,6 @@ blockquote{
         top: 50%;
     }
 }
-@media(max-width: 1360px){
-    .big-pic-experiance-p{
-        margin-top: -3%;
-    }
-    .big-pic-hotel-name{
-        margin-top: -3%;
-    }
-    .luxury-p{
-        margin-top: -8%;
-    }
-    .input-big-pic-container{
-        margin-top: 3%;
-        width: 800px;
-    }
-    .services{
-        margin-top: 20px;
-    }}
 @media (max-width: 1269px){
     .gallery-wrap{
         margin: 13% auto;
