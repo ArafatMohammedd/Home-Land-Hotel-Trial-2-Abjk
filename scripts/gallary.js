@@ -6,6 +6,16 @@ const galleryImg = [{
 },{
     img: 'Exterior-5.jpg'
 },{
+    img: 'Room-1.jpg'
+},{
+    img: 'Room-3.jpg'
+},{
+    img: 'Room-4.jpg'
+},{
+    img: 'room-detail-1.jpg'
+},{
+    img: 'room-detail-3.jpg'
+},{
     img: 'gallary1.jpg'
 },{
     img: 'gallary2.jpg'
@@ -21,21 +31,7 @@ const galleryImg = [{
     img: 'gallary7.jpg'
 },{
     img: 'gallary8.jpg'
-},{
-    img: 'Room-1.jpg'
-},{
-    img: 'Room-3.jpg'
-},{
-    img: 'Room-4.jpg'
-},{
-    img: 'room-detail-1.jpg'
-},{
-    img: 'room-detail-3.jpg'
-},{
-    img: 'External Room 1.jpg'
-},{
-    img: 'External Room 2.jpg'
-}]
+},]
 let HTML;
 const imagContainer = document.querySelector('.images-container');
 galleryImg.forEach((galleryImg)=>{
