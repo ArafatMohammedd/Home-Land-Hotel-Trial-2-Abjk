@@ -61,7 +61,7 @@ let HTML = `<span>
 });
 
 
-const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','images/room-detail-1.jpg', 'images/room-detail-3.jpg', 'images/Exterior-5.jpg']; // Array of image paths
+const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','images/room-detail-1.jpg', 'images/room-detail-3.jpg']; // Array of image paths
     let currentIndex = 0;
     const imageElement = document.getElementById('slider-image');
 
