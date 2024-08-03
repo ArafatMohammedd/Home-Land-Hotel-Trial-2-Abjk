@@ -25,5 +25,5 @@ export const rooms = [{
     priceFor: 2,
     bedType: 'King',
     roomSize: 30,
-    phoneNumber: 0222114292
+    phoneNumber: `0222114292`
 }];
