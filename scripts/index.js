@@ -46,10 +46,10 @@ let HTML = `<span>
         <h3 class="bed type">Bed Type: ${room.bedType}</h3>
         <h3>Room Size: ${room.roomSize}m<sup>2</sup></h3>
         <div class="call">
-        <i class="fa-solid fa-phone contact-detail"></i><span class="phone">: `${room.phoneNumber}`</span>
+        <i class="fa-solid fa-phone contact-detail"></i><span class="phone">: ${room.phoneNumber}</span>
         </div>        
         <p><a href="/rooms.html">More ....</a></p>
-        <button><a class="call-to-action-a" href="tel: ${room.phoneNumber}" style="color: white;">Call To Book</a></button>
+        <button><a class="call-to-action-a" href="tel: + 251966701153" style="color: white;">Call To Book</a></button>
     </div>
 
     </div>
@@ -59,7 +59,6 @@ let HTML = `<span>
     roomsHTML.innerHTML = HTML + roomsHTML.innerHTML;
 
 });
-
 
 
 const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','images/room-detail-1.jpg', 'images/room-detail-3.jpg', 'images/Exterior-5.jpg']; // Array of image paths
@@ -76,8 +75,7 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','i
         }, 1000); // Match this to the duration of your fade-out transition
     }
 
-        setInterval(changeImage, 3000); // Change image every 2 seconds
-
+        setInterval(changeImage, 3000); // Change image every 3 seconds
 
 
     $(document).ready(function(){
@@ -145,7 +143,8 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','i
             };
 
             setTimeout(() => {
-                defaultSearviceGrid.style.display = 'none';
+                defaultSearviceGrid.style.opacity = '0';
+                defaultSearviceGrid.style.visibility = 'hidden';
             }, 2000);
           })
 
@@ -166,12 +165,12 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','i
         
         ScrollReveal({ 
             reset: true, 
-            distance: '60px',
-            duration: 2000,
-            delay: 400
+            distance: '100px',
+            duration: 900,
+            delay: 200
         });
         ScrollReveal().reveal(
-            '.location-dot, .our-location-div h4, .our-location-div h2, .detail-location p, .big-pic-hotel-name, .luxury-p, .big-pic-experiance-p, .input-big-pic-container, .img-welcome, .welcome-div i, .welcome-div h2, .welcome-div h3, .welcome-div p, .container .col1 .media-icons li a, .container .clo2 li a, .container .col2 p ', 
+            '.location-dot, .our-location-div h4, .our-location-div h2, .detail-location p, .big-pic-hotel-name, .luxury-p, .big-pic-experiance-p, .input-big-pic-container, .img-welcome, .welcome-div i, .welcome-div h2, .welcome-div h3, .welcome-div p, .container .col1 .media-icons li a, .container .clo2 li a, .container .col2 p, .info-container, .info-item h2, .info-item p, .rooms-p h1, .types-room, .services-name-div h2, .services-name-div div, .services-name-div button, .gallery-wrap', 
             { delay: 500 });
 
 
@@ -229,14 +228,4 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','i
                     observer.observe(counter);
                 });
             });
-            
-
-
-
-
-
-
-
-
-
             
