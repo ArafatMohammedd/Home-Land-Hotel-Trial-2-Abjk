@@ -887,3 +887,15 @@ blockquote{
         display: none;
     }
 }
+@media(max-width: 325px){
+    .outer-big-pic-container .big-pic-hotel-name
+    {
+        font-size: 30px;
+        margin-top: 5%;
+    }
+    .outer-big-pic-container .luxury-p
+    {
+        font-size: 20px;
+        margin-top: -0%;
+    }
+}
