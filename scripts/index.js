@@ -174,16 +174,12 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','i
             { delay: 500 });
 
 
-            if (window.screen.availWidth <= 672){
-                document.querySelector('.tooltip-cbe')
-                    .innerHTML = "CBE"
-            }
+
             
     document.querySelector('blockquote')
             .addEventListener('ended', ()=>{
                 document.querySelector('blockquote')
                     .style.display = "none";
-                console.log('hi')
             })
 
 
