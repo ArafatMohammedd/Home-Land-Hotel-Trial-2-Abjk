@@ -46,7 +46,7 @@ let HTML = `<span>
         <h3 class="bed type">Bed Type: ${room.bedType}</h3>
         <h3>Room Size: ${room.roomSize}m<sup>2</sup></h3>
         <div class="call">
-        <i class="fa-solid fa-phone contact-detail"></i><span class="phone">: ${room.phoneNumber}</span>
+        <i class="fa-solid fa-phone contact-detail"></i><span class="phone">: `${room.phoneNumber}`</span>
         </div>        
         <p><a href="/rooms.html">More ....</a></p>
         <button><a class="call-to-action-a" href="tel: ${room.phoneNumber}" style="color: white;">Call To Book</a></button>
