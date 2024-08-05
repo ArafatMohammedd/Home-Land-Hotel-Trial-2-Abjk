@@ -1,7 +1,6 @@
 const galleryImg = [{
     img: 'Exterior-2.jpg'
-},
-{
+},{
     img: 'Exterior-3.jpg'
 },{
     img: 'Exterior-5.jpg'
@@ -15,6 +14,22 @@ const galleryImg = [{
     img: 'room-detail-1.jpg'
 },{
     img: 'room-detail-3.jpg'
+},{
+    img: 'Parking--11b.jpg'
+},{
+    img: 'Parking--1.jpg'
+},{
+    img: 'Exterior--1.jpg'
+},{
+    img: 'Exterior--2.jpg'
+},{
+    img: 'Exterior--11.jpg'
+},{
+    img: 'Exterior--3.jpg'
+},{
+    img: 'Exterior--4.jpg'
+},{
+    img: 'Exterior--22.jpg'
 },{
     img: 'gallary1.jpg'
 },{
