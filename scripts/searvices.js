@@ -42,7 +42,7 @@ export const services = [
     i: 'fa-solid fa-broom',
     h3: 'Daily Cleaning Services',
     class: 'none',
-    p: "Experience a fresh and inviting atmosphere every day with our comprehensive daily cleaning services. Our dedicated housekeeping team ensures that your room is meticulously cleaned and tidied, providing you with a comfortable and hygienic environment throughout your stay.",
+    p: "Experience a fresh and inviting atmosphere every day with our comprehensive daily cleaning services. Our dedicated housekeeping team ensures that your room is meticulously cleaned and tidied, providing you with a comfortable and hygienic environment.",
     style: "margin-left: 10%;",
     displayI: 'inherit;',
     displayN: "none;"
