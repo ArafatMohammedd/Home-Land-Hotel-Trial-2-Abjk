@@ -113,6 +113,25 @@
 .my_down_bttn_hover-contact_us:hover, .my_down_bttn_hover-room:hover{
 	transform: scale(1.05) translateY(-5px);
 }
+@media (max-width: 440px){
+    .my_down_bttn_hover-contact_us, .my_down_bttn_hover-map
+    ,.my_down_bttn_hover-room,.my_down_bttn_hover-tiktok{
+        height: 35px;
+        width: 35px;
+     }
+     .my_down_bttn_hover-tiktok{
+        left: 100px;
+    }
+    .my_down_bttn_hover-room{
+        left: 150px;
+    }
+    .my_down_bttn_hover-map{
+        left: 200px;
+    }
+    .my_down_bttn_hover-contact_us{
+        left: 250px;
+    }
+}
 /*back to top end*/
 
 * {
