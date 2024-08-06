@@ -49,7 +49,7 @@ let HTML = `<span>
         <i class="fa-solid fa-phone contact-detail"></i><span class="phone">: ${room.phoneNumber}</span>
         </div>        
         <p><a href="/rooms.html">More ....</a></p>
-        <button><a class="call-to-action-a" href="tel: + 251966701153" style="color: white;">Call To Book</a></button>
+        <button><a class="call-to-action-a" href="tel:0222111131" style="color: white;">Call To Book</a></button>
     </div>
 
     </div>
