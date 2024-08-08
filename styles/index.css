@@ -745,7 +745,7 @@ blockquote{
         font-size: 50px;
     }
 }
-@media(max-width: 618px){
+@media(max-width: 1200px){
     .tiktok .tiktok-detail h1{
         margin-top: 70%;
         font-size: 30px;
@@ -834,7 +834,7 @@ blockquote{
         font-size: 23px;
     }
 }
-@media (max-width: 470px){
+@media (max-width: 570px){
     .tiktok{
         display: flex;
         flex-direction: column;
