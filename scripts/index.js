@@ -170,7 +170,7 @@ const images = ['images/Room-1.jpg', 'images/Room-3.jpg', 'images/Room-4.jpg','i
             delay: 50
         });
         ScrollReveal().reveal(
-            '.location-dot, .our-location-div h4, .our-location-div h2, .detail-location p, .big-pic-hotel-name, .luxury-p, .big-pic-experiance-p, .input-big-pic-container, .img-welcome, .welcome-div i, .welcome-div h2, .welcome-div h3, .welcome-div p, .container .col1 .media-icons li a, .container .clo2 li a, .container .col2 p, .info-container, .info-item h2, .info-item p, .rooms-p h1, .types-room, .services-name-div h2, .services-name-div div, .services-name-div button, .gallery-wrap', 
+            '.location-dot, .our-location-div h4, .our-location-div h2, .detail-location p, .big-pic-hotel-name, .luxury-p, .big-pic-experiance-p, .input-big-pic-container, .img-welcome, .welcome-div i, .welcome-div h2, .welcome-div h3, .welcome-div p, .info-container, .info-item h2, .info-item p, .rooms-p h1, .types-room, .services-name-div h2, .services-name-div div, .services-name-div button, .gallery-wrap', 
             { delay: 500 });
 
 
