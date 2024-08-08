@@ -1,5 +1,5 @@
 import{rooms as e}from"./rooms.js";import{services as l}from"./searvices.js";import{defaultServices as t}from"./searvices.js";import{Partners as r}from"./parteners.js";let scrollContainer=document.querySelector(".gallery"),backBtn=document.getElementById("backBtn"),nextBtn=document.getElementById("nextBtn");scrollContainer.addEventListener("wheel",e=>{e.preventDefault(),scrollContainer.scrollLeft+=e.deltaY,scrollContainer.style.scrollBehavior="auto"}),nextBtn.addEventListener("click",()=>{scrollContainer.style.scrollBehavior="smooth",scrollContainer.scrollLeft+=300}),backBtn.addEventListener("click",()=>{scrollContainer.style.scrollBehavior="smooth",scrollContainer.scrollLeft-=300});let roomsHTML=document.querySelector(".types-room"),i=0;e.forEach(e=>{let l=`<span>
-    <img src="${e.img}" class="room-image">
+    <img src="${e.img}" class="room-image" alt="cover Images">
 
     <div class="room-detail">
 
